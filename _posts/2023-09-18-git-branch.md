@@ -27,7 +27,7 @@ branch 정리
 
 `git check out 브랜치이름` HEAD가 해당 브랜치로 전환하기
 
-**base : 합치려고하는 두 브랜치의 공통된 조상 브랜치**
+**:grey_exclamation:base : 합치려고하는 두 브랜치의 공통된 조상 브랜치**
 
 `git merge 브랜치이름` 현재 브랜치와 해당 브랜치 병합하기
 
