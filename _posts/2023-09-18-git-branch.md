@@ -16,7 +16,7 @@ pin: true
 미리해야할 일
 ----------
 
-`git log --all --graph -- oneline` 모든 branch들을 시각적으로, 한줄로 표현
+`git log --all --graph --oneline` 모든 branch들을 시각적으로, 한줄로 표현
 
 `git branch` branch 목록 보여주기
 
