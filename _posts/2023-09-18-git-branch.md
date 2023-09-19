@@ -31,17 +31,19 @@ branch 정리
 
 `git merge 브랜치이름` 현재 브랜치와 해당 브랜치 병합하기
 
-가상의 프로젝트로 간단하게 branch 만들어보기
+가상의 프로젝트로 간단하게 branch 만들어보기  
 -----------------------------------
   
+1. 실습(?)을 진행할 branch-study라는 디렉토리 만들기  
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir git % mkdir branch-study
 parkjinhong@bagjinhong-ui-MacBookAir git % cd branch-study
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git init .
 Initialized empty Git repository in /Users/parkjinhong/Documents/git/branch-study/.git/
-```
-실습(?)을 진행할 branch-study라는 디렉토리 만들기  
+```  
+  
 
+2. main의 version1을 commit해주고 version2와 version3를 만들어주기  
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % nano project.txt
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git add project.txt
@@ -69,10 +71,10 @@ parkjinhong@bagjinhong-ui-MacBookAir branch-study % git log --all --graph --onel
 * cacd15b (HEAD -> main) main-version3
 * dad6f68 main-version2
 * f0e686c main-version1
-```
-main의 version1을 commit해주고 version2와 version3를 만들어주기  
+```  
   
-    
+
+3. main-version3에서 branch 3개 만들어주기. branch이름은 각각 naver, kakao, line.  
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git branch naver
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git branch kakao
@@ -81,10 +83,9 @@ parkjinhong@bagjinhong-ui-MacBookAir branch-study % git log --all --graph --onel
 * cacd15b (HEAD -> main, naver, line, kakao) main-version3
 * dad6f68 main-version2
 * f0e686c main-version1
-```
-main-version3에서 branch 3개 만들어주기. branch이름은 각각 naver, kakao, line.  
+```  
   
-    
+4. main, naver, kakao, line 각각 새로운 버전 만들어주기  
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % nano project.txt
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git commit -am "main-version4"
@@ -119,12 +120,13 @@ parkjinhong@bagjinhong-ui-MacBookAir branch-study % git log --all --graph --onel
 * cacd15b main-version3
 * dad6f68 main-version2
 * f0e686c main-version1
-```
-main, naver, kakao, line 각각 새로운 버전 만들어주기
+```  
+
 나뭇가지가 만들어졌다!  
   
-    
+
 이제 merge 시도해볼 차례  
+
 **(참고)**
 main-version4의 텍스트는
 ```
@@ -133,7 +135,7 @@ version1
 version2
 version3
 version4
-```
+```  
 
 naver-version1의 텍스트는
 ```
@@ -147,7 +149,7 @@ version1
 ```
 commit될 때마다 텍스트에 표시해놓는 방식으로 만들어왔다.  
   
-    
+5. main-version4와 naver-version1을 merge해보기
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git checkout main
 Switched to branch 'main'
@@ -155,8 +157,8 @@ parkjinhong@bagjinhong-ui-MacBookAir branch-study % git merge naver
 Auto-merging project.txt
 CONFLICT (content): Merge conflict in project.txt
 Automatic merge failed; fix conflicts and then commit the result.
-```
-main-version4와 naver-version1을 merge해보기
+```  
+
 실패됐다고 뜨지만, 텍스트에 들어가보면,
 
 ```
@@ -171,6 +173,7 @@ version4
 naver
 version1
 >>>>>>> naver
-```
+```  
+
 '=='를 기준으로 두 branch가 어떻게 충돌되어있고, 사용자에게 어떻게 수정할지 결정하라고 친절하게 표시해준다.
 
