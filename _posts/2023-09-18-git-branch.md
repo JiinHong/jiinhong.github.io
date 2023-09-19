@@ -148,7 +148,7 @@ naver
 version1
 ```
 commit될 때마다 텍스트에 표시해놓는 방식으로 만들어왔다.  
-  
+
 5. main-version4와 naver-version1을 merge해보기
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git checkout main
