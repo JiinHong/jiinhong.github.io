@@ -34,7 +34,7 @@ branch 정리
 가상의 프로젝트로 간단하게 branch 만들어보기  
 -----------------------------------
   
-1. 실습(?)을 진행할 branch-study라는 디렉토리 만들기  
+A. 실습(?)을 진행할 branch-study라는 디렉토리 만들기  
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir git % mkdir branch-study
 parkjinhong@bagjinhong-ui-MacBookAir git % cd branch-study
@@ -43,7 +43,7 @@ Initialized empty Git repository in /Users/parkjinhong/Documents/git/branch-stud
 ```  
   
 
-2. main의 version1을 commit해주고 version2와 version3를 만들어주기  
+B. main의 version1을 commit해주고 version2와 version3를 만들어주기  
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % nano project.txt
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git add project.txt
@@ -74,7 +74,7 @@ parkjinhong@bagjinhong-ui-MacBookAir branch-study % git log --all --graph --onel
 ```  
   
 
-3. main-version3에서 branch 3개 만들어주기. branch이름은 각각 naver, kakao, line.  
+C. main-version3에서 branch 3개 만들어주기. branch이름은 각각 naver, kakao, line.  
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git branch naver
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git branch kakao
@@ -85,7 +85,7 @@ parkjinhong@bagjinhong-ui-MacBookAir branch-study % git log --all --graph --onel
 * f0e686c main-version1
 ```  
   
-4. main, naver, kakao, line 각각 새로운 버전 만들어주기  
+D. main, naver, kakao, line 각각 새로운 버전 만들어주기  
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % nano project.txt
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git commit -am "main-version4"
@@ -149,7 +149,7 @@ version1
 ```
 commit될 때마다 텍스트에 표시해놓는 방식으로 만들어왔다.  
 
- 5. main-version4와 naver-version1을 merge해보기
+E. main-version4와 naver-version1을 merge해보기
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git checkout main
 Switched to branch 'main'
@@ -177,7 +177,7 @@ version1
 
 '=='를 기준으로 두 branch가 어떻게 충돌되어있고, 사용자에게 어떻게 수정할지 결정하라고 친절하게 표시해준다.
 
- 6. 원해는대로 수정해주고 commit을 해주기
+F. 원해는대로 수정해주고 commit을 해주기
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % nano project.txt
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git commit -am "merge main-naver"
