@@ -149,7 +149,7 @@ version1
 ```
 commit될 때마다 텍스트에 표시해놓는 방식으로 만들어왔다.  
 
-5. main-version4와 naver-version1을 merge해보기
+ 5. main-version4와 naver-version1을 merge해보기
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git checkout main
 Switched to branch 'main'
@@ -177,7 +177,7 @@ version1
 
 '=='를 기준으로 두 branch가 어떻게 충돌되어있고, 사용자에게 어떻게 수정할지 결정하라고 친절하게 표시해준다.
 
-6. 원해는대로 수정해주고 commit을 해주기
+ 6. 원해는대로 수정해주고 commit을 해주기
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % nano project.txt
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git commit -am "merge main-naver"
