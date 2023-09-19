@@ -33,7 +33,7 @@ branch 정리
 
 가상의 프로젝트로 간단하게 branch 만들어보기
 -----------------------------------
-
+  
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir git % mkdir branch-study
 parkjinhong@bagjinhong-ui-MacBookAir git % cd branch-study
@@ -41,8 +41,7 @@ parkjinhong@bagjinhong-ui-MacBookAir branch-study % git init .
 Initialized empty Git repository in /Users/parkjinhong/Documents/git/branch-study/.git/
 ```
 실습(?)을 진행할 branch-study라는 디렉토리 만들기  
-  
-    
+
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % nano project.txt
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git add project.txt
