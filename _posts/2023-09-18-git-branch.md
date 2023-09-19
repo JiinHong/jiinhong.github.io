@@ -40,11 +40,9 @@ parkjinhong@bagjinhong-ui-MacBookAir git % cd branch-study
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git init .
 Initialized empty Git repository in /Users/parkjinhong/Documents/git/branch-study/.git/
 ```
-실습(?)을 진행할 branch-study라는 디렉토리 만들기
-
-
-
-
+실습(?)을 진행할 branch-study라는 디렉토리 만들기  
+  
+    
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % nano project.txt
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git add project.txt
@@ -73,12 +71,9 @@ parkjinhong@bagjinhong-ui-MacBookAir branch-study % git log --all --graph --onel
 * dad6f68 main-version2
 * f0e686c main-version1
 ```
-main의 version1을 commit해주고 version2와 version3를 만들어주기
-
-
-
-
-
+main의 version1을 commit해주고 version2와 version3를 만들어주기  
+  
+    
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git branch naver
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git branch kakao
@@ -88,11 +83,9 @@ parkjinhong@bagjinhong-ui-MacBookAir branch-study % git log --all --graph --onel
 * dad6f68 main-version2
 * f0e686c main-version1
 ```
-main-version3에서 branch 3개 만들어주기. branch이름은 각각 naver, kakao, line.
-
-
-
-
+main-version3에서 branch 3개 만들어주기. branch이름은 각각 naver, kakao, line.  
+  
+    
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % nano project.txt
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git commit -am "main-version4"
@@ -129,13 +122,10 @@ parkjinhong@bagjinhong-ui-MacBookAir branch-study % git log --all --graph --onel
 * f0e686c main-version1
 ```
 main, naver, kakao, line 각각 새로운 버전 만들어주기
-나뭇가지가 만들어졌다!
-
-
-
-
-이제 merge 시도해볼 차례
-
+나뭇가지가 만들어졌다!  
+  
+    
+이제 merge 시도해볼 차례  
 **(참고)**
 main-version4의 텍스트는
 ```
@@ -156,12 +146,9 @@ version3
 naver
 version1
 ```
-
-commit될 때마다 텍스트에 표시해놓는 방식으로 만들어왔다.
-
-
-
-
+commit될 때마다 텍스트에 표시해놓는 방식으로 만들어왔다.  
+  
+    
 ```bash
 parkjinhong@bagjinhong-ui-MacBookAir branch-study % git checkout main
 Switched to branch 'main'
