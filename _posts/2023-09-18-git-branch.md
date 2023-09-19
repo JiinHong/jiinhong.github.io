@@ -177,3 +177,24 @@ version1
 
 '=='를 기준으로 두 branch가 어떻게 충돌되어있고, 사용자에게 어떻게 수정할지 결정하라고 친절하게 표시해준다.
 
+6. 원해는대로 수정해주고 commit을 해주기
+```bash
+parkjinhong@bagjinhong-ui-MacBookAir branch-study % nano project.txt
+parkjinhong@bagjinhong-ui-MacBookAir branch-study % git commit -am "merge main-naver"
+[main 6ec79cf] merge main-naver
+parkjinhong@bagjinhong-ui-MacBookAir branch-study % git log --all --graph --oneline
+*   6ec79cf (HEAD -> main) merge main-naver
+|\  
+| * 7c4ae32 (naver) naver-version1
+* | 2b20fd2 main-version4
+|/  
+| * 7cc4125 (line) line-version1
+|/  
+| * e8e1179 (kakao) kakao-version1
+|/  
+* cacd15b main-version3
+* dad6f68 main-version2
+* f0e686c main-version1
+```
+
+branch와 merge 체험 끝!
