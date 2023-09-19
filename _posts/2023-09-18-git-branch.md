@@ -127,7 +127,7 @@ parkjinhong@bagjinhong-ui-MacBookAir branch-study % git log --all --graph --onel
 
 이제 merge 시도해볼 차례  
 
-**(참고)**
+**(참고)**  
 main-version4의 텍스트는
 ```
 main
