@@ -159,7 +159,8 @@ CONFLICT (content): Merge conflict in project.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```  
 
-실패됐다고 뜨지만, 텍스트에 들어가보면,
+Automatic merge failed 는 merge를 실패했다는 뜻이 아니라, merge는 완료되었으나 project.txt를 자동적으로 수정해주는 것을 실패했다는 뜻이다.
+텍스트에 들어가보면,
 
 ```
 main
