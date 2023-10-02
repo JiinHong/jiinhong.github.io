@@ -3,8 +3,8 @@
 layout: post
 title: creat(), close(), lseek(), write()
 date: 2023-10-01 00:00:00 +0800
-categories: [CS Study, Sophomore]
-tags: [unix]
+categories: [CS Study, unix]
+tags: [Sophomore]
 pin: true
 
 ---
