@@ -20,6 +20,8 @@ timezone: Asia/Seoul
 
 title: ParkJinHong # the main title
 
+google_analytics: "G-215V24VYRM"
+
 tagline: Happy Quokka # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
