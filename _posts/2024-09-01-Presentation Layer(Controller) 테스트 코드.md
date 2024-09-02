@@ -31,11 +31,17 @@ class ProductControllerTest {
     // 서비스 layer에 MockBean 명시
     @MockBean
     private ProductService productService;
+
+    // ProductRepository까지 명시해줄 필요는 없음.
+    // 여기서의 ProductService는 mock(가짜)이니까...
 }
 ```
 
 @WebMvcTest는 컨트롤러만을 테스트하기 위한 어노테이션이다.  
 Postman으로 직접 HTTP 요청을 만들지 않아도 컨트롤러의 동작을 테스트할 수 있다.  
+
+- @WebMvcTest : 컨트롤러 레이어만 신속하게 테스트 (단위 테스트)
+- Postman : 실제 배포된 api 동작을 테스트 (통합 테스트)
 
 <br>
 
@@ -43,7 +49,7 @@ Postman으로 직접 HTTP 요청을 만들지 않아도 컨트롤러의 동작�
 
 <br>
 
-### 2. mockMvc를 이용한 api 테스트
+### 2. mockMvc를 이용한 api 요청 테스트
 
 ```java
 @DisplayName("신규 상품을 등록한다.")
@@ -74,7 +80,7 @@ perform는 api 요청을 수행해주는 메서드이다. 그런데 여기서, o
 
 <br>
 
-여기서, json의 직렬화와 역직렬화란?  
+**여기서, json의 직렬화와 역직렬화란?**  
 
 1. 직렬화 : 객체를 외부 시스템에서 사용할 수 있도록 바이트 형태로 데이터를 변환하여 json 파일로 만드는 과정이다.
 2. 역직렬화 : 거꾸로 json 파일(외부 시스템의 바이트 형태의 데이터)을 객체로 변환하는 과정  
