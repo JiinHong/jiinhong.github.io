@@ -142,10 +142,10 @@ public class StudentMain {
 
         // 직렬화된 바이트 데이터를 byte 배열로 변환
         serializedMember = baos.toByteArray();
-        
+
         // 바이트 배열로 생성된 직렬화 데이터를 base64로 변환
-        System.out.println(student.toString());
-        System.out.println(Base64.getEncoder().encodeToString(serializedMember));
+        System.out.println("원본 객체 : " + student);
+        System.out.println("직렬화된 객체 데이터 : " + Base64.getEncoder().encodeToString(serializedMember));
         String base64Student = Base64.getEncoder().encodeToString(serializedMember);
 
         // 그럼 이제, 직렬화된 데이터를 다시 역직렬화 해보자.
@@ -153,16 +153,23 @@ public class StudentMain {
 
         // ByteArrayInputStream에 raw한 데이터를 저장
         ByteArrayInputStream bais = new ByteArrayInputStream(serializedMember1);
-        
+
         // ObjectOutputStream으로 바이트를 객체로 변환
         ObjectInputStream ois = new ObjectInputStream(bais);
-        
+
         // 역직렬화된 Student 객체를 읽어온다.
         Object objectMember = ois.readObject();
         Student student1 = (Student) objectMember;
-        System.out.println(student1);
+        System.out.println("다시 역직렬화된 객체 : " + student1);
     }
 }
+```
+
+**출력 결과**
+```bash
+원본 객체 : 123 - 박진홍 - 24
+직렬화된 객체 데이터 : rO0ABXNyAA9zdHVkZW50LlN0dWRlbnQAAAAAAAAE0gIAAkoACXN0dWRlbnRJZEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cAAAAAAAAAB7dAAJ67CV7KeE7ZmN
+다시 역직렬화된 객체 : 123 - 박진홍 - 0 # age 필드는 transient로 직렬화에서 제외
 ```
 
 하지만 이러한 방식은 치명적인 보안 이슈가 있고, 여러가지 제약 상황(객체 구조 변경 불가, 엄격한 타입 체크 등)이 많아서 사용되지 않는다. 조슈아 블로크도 JSON 등의 포맷을 사용하는 것을 추천한다.
