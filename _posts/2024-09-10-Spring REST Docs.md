@@ -325,7 +325,7 @@ public class ProductControllerDocsTest extends RestDocsSupport {
 
 - product.adoc 코드  
 
-```adoc
+```
 [[product-create]]
 === 신규 상품 등록
 
@@ -342,7 +342,7 @@ include::{snippets}/product-create/response-fields.adoc[]
 
 - index.adoc 코드  
 
-```adoc 
+```
 ifndef::snippets[]
 :snippets: ../../build/generated-snippets
 endif::[]
