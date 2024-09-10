@@ -134,7 +134,8 @@ public abstract class RestDocsSupport {
 
 ### 4. ProductController 테스트 해보기
 
-- Override
+- initController에 ProductController 넣어주기  
+
 ```java
 public class ProductControllerDocsTest extends RestDocsSupport {
 
@@ -154,7 +155,8 @@ public class ProductControllerDocsTest extends RestDocsSupport {
 
 - 문서화 설정
 
-ApiResponse와 Product의 형식이 아래와 같이 설정되어있다고 가정함.
+ApiResponse와 Product의 형식이 아래와 같이 설정되어있다고 가정함. 
+ 
 ```java
 @Getter
 public class ApiResponse<T> {
