@@ -156,7 +156,7 @@ public class ProductControllerDocsTest extends RestDocsSupport {
 - 문서화 설정
 
 ApiResponse와 Product의 형식이 아래와 같이 설정되어있다고 가정함. 
- 
+
 ```java
 @Getter
 public class ApiResponse<T> {
@@ -227,6 +227,8 @@ public class Product extends BaseEntity {
 
 위의 response 형식과 Product 형식에 맞춰서 문서화를 해준다.
 ```java
+public class ProductControllerDocsTest extends RestDocsSupport {
+    
     @DisplayName("신규 상품을 등록하는 API")
     @Test
     void createProduct() throws Exception {
@@ -302,6 +304,7 @@ public class Product extends BaseEntity {
                 )
             ));
     }
+}
 ```
 
 <br>
