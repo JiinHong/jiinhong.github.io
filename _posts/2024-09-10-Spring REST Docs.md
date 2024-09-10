@@ -94,7 +94,7 @@ bootJar {
 
 ### 2. 인텔리제이 플러그인 설치
 
-![플러그인 설치 사진](asciidoc_plugin.png)
+<img alt="1" src="https://github.com/JiinHong/jiinhong.github.io/blob/main/_posts/asciidoc_plugin.png?raw=true">  
 
 <br>
 
@@ -307,12 +307,12 @@ public class Product extends BaseEntity {
 ### 4. Asciidoctor 실행하기
 
 인텔리제이 우측에 gradle에서 Task 하위의 documentation에서 asciidoctor를 실행시킨다.
-![Asciidoctor 실행](asciidoctor.png)
+<img alt="1" src="https://github.com/JiinHong/jiinhong.github.io/blob/main/_posts/asciidoctor.png?raw=true">  
 
 <br>
 
 그러면 build 하위에 generated-snippets라는 파일이 생기고, 그 안에 문서화에 필요한 코드 조각들이 생성된다.
-![generated-snippets](generated-snippets.png)  
+<img alt="1" src="https://github.com/JiinHong/jiinhong.github.io/blob/main/_posts/generated-snippets.png?raw=true">  
 
 <br>
 
@@ -356,15 +356,15 @@ include::api/product/product.adoc[]
 <br>
 
 그럼 아래와 같이 보기 좋은 api 문서가 생성된다.
-![api](api.png)
+<img alt="1" src="https://github.com/JiinHong/jiinhong.github.io/blob/main/_posts/api.png?raw=true">  
 
 <br>
 
 이 상태에서 gradle에 build를 한 번 해주면, build/docs/asciidoc에 index.html 파일이 하나 생성된다.
-![alt text](image.png)
+<img alt="1" src="https://github.com/JiinHong/jiinhong.github.io/blob/main/_posts/image.png?raw=true">  
 
 <br>
 
 이 파일을 chrome에서 열어주면, application이 실행됐을 때, 보여줄 수 있는 api 문서가 생성되었다!
 
-![alt text](image-1.png)
+<img alt="1" src="https://github.com/JiinHong/jiinhong.github.io/blob/main/_posts/image-1.png?raw=true">  
