@@ -323,7 +323,8 @@ public class ProductControllerDocsTest extends RestDocsSupport {
 
 이제 이 코드 조각들을 이용해서 문서를 작성해보자. 
 
-- product.adoc 코드
+- product.adoc 코드  
+
 ```adoc
 [[product-create]]
 === 신규 상품 등록
@@ -339,7 +340,8 @@ include::{snippets}/product-create/response-fields.adoc[]
 
 <br>
 
-- index.adoc 코드
+- index.adoc 코드  
+
 ```adoc 
 ifndef::snippets[]
 :snippets: ../../build/generated-snippets
