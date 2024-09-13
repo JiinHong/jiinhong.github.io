@@ -228,7 +228,7 @@ public class Product extends BaseEntity {
 위의 response 형식과 Product 형식에 맞춰서 문서화를 해준다.
 ```java
 public class ProductControllerDocsTest extends RestDocsSupport {
-    
+
     @DisplayName("신규 상품을 등록하는 API")
     @Test
     void createProduct() throws Exception {
@@ -309,7 +309,7 @@ public class ProductControllerDocsTest extends RestDocsSupport {
 
 <br>
 
-### 4. Asciidoctor 실행하기
+### 5. Asciidoctor 실행하기
 
 인텔리제이 우측에 gradle에서 Task 하위의 documentation에서 asciidoctor를 실행시킨다.
 <img alt="1" src="https://github.com/JiinHong/jiinhong.github.io/blob/main/_posts/asciidoctor.png?raw=true">  
