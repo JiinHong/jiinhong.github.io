@@ -74,12 +74,11 @@ public class GeneratePresignedUrlRequest extends AmazonWebServiceRequest impleme
 		return this;
 	}
 
-
     public GeneratePresignedUrlRequest withExpiration(Date expiration) {
         this.setExpiration(expiration);
         return this;
     }
-
+	
 	// ...
 
 }
