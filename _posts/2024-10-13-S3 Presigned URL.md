@@ -42,13 +42,18 @@ pin: true
 ### 1. com.amazonaws.services.s3 뜯어보기
 
 - com.amazonaws.services.s3.AmazonS3  
+
+<br>
+
 ```java
 public interface AmazonS3 extends S3DirectSpi {
 	...
     URL generatePresignedUrl(GeneratePresignedUrlRequest var1) throws SdkClientException;
 	...
 }
-```
+```  
+<br>
+
 GeneratePresignedUrlRequest 형식으로 변수를 넣어주면, Presigned URL을 발급해주는 인터페이스이다.  
 
 <br>
