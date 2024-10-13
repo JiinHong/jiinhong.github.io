@@ -43,26 +43,24 @@ pin: true
 
 - com.amazonaws.services.s3.AmazonS3  
 
-<br>
-
 ```java
 public interface AmazonS3 extends S3DirectSpi {
-	...
+	// ...
     URL generatePresignedUrl(GeneratePresignedUrlRequest var1) throws SdkClientException;
-	...
+	// ...
 }
 ```  
-<br>
 
 GeneratePresignedUrlRequest 형식으로 변수를 넣어주면, Presigned URL을 발급해주는 인터페이스이다.  
 
 <br>
 
 - import com.amazonaws.services.s3.model.GeneratePresignedUrlRequest  
+
 ```java
 public class GeneratePresignedUrlRequest extends AmazonWebServiceRequest implements SSECustomerKeyProvider, Serializable {
 
-	...
+	// ...
 	
 	public GeneratePresignedUrlRequest(String bucketName, String key, HttpMethod method) {
 		this.requestParameters = new HashMap();
@@ -82,7 +80,7 @@ public class GeneratePresignedUrlRequest extends AmazonWebServiceRequest impleme
         return this;
     }
 
-	...
+	// ...
 
 }
 ```  
@@ -216,8 +214,6 @@ public class FileService {
 <br>
 
 - FileController  
-
-<br>
 
 ```java
 package com.pocket.inbounds.file.presentation;
