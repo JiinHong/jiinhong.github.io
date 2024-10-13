@@ -99,6 +99,7 @@ public class GeneratePresignedUrlRequest extends AmazonWebServiceRequest impleme
 ### 2. Presigned URL 발급 로직
 
 - PresignedUrlRequest  
+
 ```java
 package com.pocket.core.image.dto;
 
