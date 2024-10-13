@@ -55,7 +55,7 @@ GeneratePresignedUrlRequest 형식으로 변수를 넣어주면, Presigned URL�
 
 <br>
 
-- import com.amazonaws.services.s3.model.GeneratePresignedUrlRequest  
+- com.amazonaws.services.s3.model.GeneratePresignedUrlRequest  
 
 ```java
 public class GeneratePresignedUrlRequest extends AmazonWebServiceRequest implements SSECustomerKeyProvider, Serializable {
